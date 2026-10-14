@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us · Well-Read</title>
+    <meta name="description" content="Get in touch with the Well-Read team.">
+    <meta name="theme-color" content="#2a3fe0">
+    <link rel="icon" href="Assets/Images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <script src="Assets/js/main.js" defer></script>
+</head>
+
+<body data-nav="contact">
+    <site-header></site-header>
+
+    <main id="main">
+        <section class="split">
+            <div class="split-aside aside-contact on-dark">
+                <h1>Contact us</h1>
+                <p>Write to us with the form, or reach us here.</p>
+                <dl class="details">
+                    <dt>Address</dt><dd>Ismailia, Egypt</dd>
+                    <dt>Phone</dt><dd>+20 000 000 0000</dd>
+                    <dt>Email</dt><dd>hello@well-read.example</dd>
+                </dl>
+            </div>
+
+            <div class="split-main">
+                <div class="form-card">
+                    <h2>Send a message</h2>
+                    <form id="contactForm">
+                        <div class="field">
+                            <label for="name">Full name</label>
+                            <input id="name" type="text" required autocomplete="name">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" required autocomplete="email">
+                        </div>
+                        <div class="field">
+                            <label for="message">Your message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button class="btn" type="submit">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+</body>
+
+</html>

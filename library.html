@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books · Well-Read</title>
+    <meta name="description" content="Science, history and culture books at Well-Read.">
+    <meta name="theme-color" content="#2a3fe0">
+    <link rel="icon" href="Assets/Images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <script src="Assets/js/data.js" defer></script>
+    <script src="Assets/js/main.js" defer></script>
+    <script src="Assets/js/catalog.js" defer></script>
+</head>
+
+<body data-nav="books" data-page="library">
+    <site-header></site-header>
+
+    <main id="main">
+        <header class="page-head">
+            <div class="wrap">
+                <h1>Science &amp; history</h1>
+                <p class="quote">Explore the stories behind our world, from the first chemists to the edge of the universe.</p>
+            </div>
+        </header>
+
+        <section class="block block-tight">
+            <div class="wrap">
+                <div class="filter"><label class="visually-hidden" for="filter">Filter books</label><input id="filter" type="search" placeholder="Filter books by title or topic"></div>
+                <div class="cards" id="grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+</body>
+
+</html>

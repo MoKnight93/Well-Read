@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in · Well-Read</title>
+    <meta name="description" content="Log in to Well-Read (demo).">
+    <meta name="theme-color" content="#2a3fe0">
+    <link rel="icon" href="Assets/Images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <script src="Assets/js/main.js" defer></script>
+</head>
+
+<body data-nav="login">
+    <site-header></site-header>
+
+    <main id="main">
+        <section class="split">
+            <div class="split-aside aside-auth on-dark">
+                <p class="quote">“Good friends, good books, and a sleepy conscience: this is the ideal life.”</p>
+            </div>
+
+            <div class="split-main">
+                <div class="form-card">
+                    <h2>Log in</h2>
+                    <form id="authForm">
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" required autocomplete="email">
+                        </div>
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <input id="password" type="password" required minlength="7" autocomplete="current-password">
+                            <p class="hint">At least 7 characters.</p>
+                        </div>
+                        <button class="btn btn-block" type="submit">Log in</button>
+                    </form>
+                    <div class="form-links">
+                        <p>Forgot your password? <a href="help.html">Get help</a></p>
+                        <p>New to Well-Read? <a href="signup.html">Create an account</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+</body>
+
+</html>

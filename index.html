@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well-Read</title>
+    <meta name="description" content="Well-Read: tranquility, serenity and culture. Discover the latest and most read books.">
+    <meta name="theme-color" content="#2a3fe0">
+    <link rel="icon" href="Assets/Images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <script src="Assets/js/data.js" defer></script>
+    <script src="Assets/js/main.js" defer></script>
+    <script src="Assets/js/catalog.js" defer></script>
+</head>
+
+<body data-nav="home" data-page="home">
+    <site-header></site-header>
+
+    <main id="main">
+        <section class="hero on-dark" id="home">
+            <div class="hero-copy">
+                <h1>Well-Read.</h1>
+                <p class="tagline">Tranquility, Serenity &amp; Culture</p>
+                <p class="intro">
+                    It is both relaxing and invigorating to occasionally set aside the worries of life, seek the
+                    company of a friendly book… from the reading of ‘good books’ there comes a richness of life that
+                    can be obtained in no other way.
+                </p>
+                <div class="hero-actions">
+                    <a href="books.html" class="btn btn-mark">Start reading</a>
+                    <a href="signup.html" class="btn btn-line">Sign up</a>
+                </div>
+            </div>
+            <div class="spines" id="spines" aria-label="A shelf of novels"></div>
+        </section>
+
+        <section class="block" id="latest">
+            <div class="wrap">
+                <div class="block-head">
+                    <h2>Latest books</h2>
+                    <p>Take a look at what’s new.</p>
+                </div>
+                <div id="latestList"></div>
+            </div>
+        </section>
+
+        <section class="block block-tight" id="popular">
+            <div class="wrap">
+                <div class="block-head">
+                    <div>
+                        <h2>The most read</h2>
+                        <p>The most read and searched books in our bookstore.</p>
+                    </div>
+                    <div class="shelf-tools">
+                        <button class="shelf-btn" id="shelfPrev" type="button" aria-label="Scroll the shelf left"></button>
+                        <button class="shelf-btn" id="shelfNext" type="button" aria-label="Scroll the shelf right"></button>
+                    </div>
+                </div>
+                <div class="shelf" id="shelf" tabindex="0" aria-label="Most read books"></div>
+            </div>
+        </section>
+
+        <section class="rate on-dark" id="feedback">
+            <div>
+                <h2>Rate us</h2>
+                <p class="lead">Tell us how your time at Well-Read has been. Your rating helps us choose what to add next.</p>
+            </div>
+            <div class="rate-card">
+                <div class="rate-thanks" id="rateThanks" hidden>
+                    <p>Thanks for rating us!</p>
+                    <button type="button" class="rate-edit" id="rateEdit">Edit your rating</button>
+                </div>
+
+                <form id="rateForm">
+                    <fieldset class="stars">
+                        <legend class="visually-hidden">Your rating</legend>
+                        <input type="radio" name="rate" id="rate-5" value="5" required>
+                        <label for="rate-5" title="5 stars"></label>
+                        <input type="radio" name="rate" id="rate-4" value="4">
+                        <label for="rate-4" title="4 stars"></label>
+                        <input type="radio" name="rate" id="rate-3" value="3">
+                        <label for="rate-3" title="3 stars"></label>
+                        <input type="radio" name="rate" id="rate-2" value="2">
+                        <label for="rate-2" title="2 stars"></label>
+                        <input type="radio" name="rate" id="rate-1" value="1">
+                        <label for="rate-1" title="1 star"></label>
+                    </fieldset>
+
+                    <p class="rate-message" id="rateMessage" aria-live="polite"></p>
+
+                    <div class="rate-fields" id="rateFields" hidden>
+                        <textarea name="comment" placeholder="Describe your experience.." aria-label="Describe your experience"></textarea>
+                        <button type="submit" class="btn btn-block">Post rating</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+</body>
+
+</html>
