@@ -6,7 +6,7 @@
    ========================================================== */
 
 /* The one place to set the designer's name (shown in the footer and on About). */
-const DESIGNER_NAME = "Your Name";
+const DESIGNER_NAME = "Mohamed Samir";
 
 const NAV_LINKS = [
     { key: "home", href: "index.html", label: "Home" },
