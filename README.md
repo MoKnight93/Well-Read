@@ -9,15 +9,10 @@ Well-Read is a bookstore website: *Tranquility, Serenity & Culture*.
 
 Well-Read is a **redesign of Bookie**, a website built by a university team. The books, the writing and the original idea come from Bookie. The name, colours, layout and code of Well-Read are new.
 
-- **Current design and code:** set in `Assets/js/main.js` (`DESIGNER_NAME`)
+- **Current design and code:** set in `Assets/js/main.js` (`Mohamed Samir`)
 - **Original Bookie team:** Eman, Ismail, Badr, Bishoy, Mostafa, M.Nasr, Fady, John, Moemen and Kero (see the About page for what each of them built)
 
 All respect to the original Bookie project and everyone who made it.
-
-## Before you publish
-
-1. Open `Assets/js/main.js` and change `DESIGNER_NAME = "Your Name"` to your real name. It updates the footer and the About page.
-2. Replace the placeholder contact details (phone, email) in `contact.html`.
 
 ## Pages
 
